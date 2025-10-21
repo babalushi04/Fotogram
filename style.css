@@ -50,7 +50,7 @@ main {
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-image: url(/imgs/mainPics/rain_bg.jpg);
+    background-image: url(./img/pics/albanische_flage.jpg);
     background-position: center;
     background-size: cover;
 }
