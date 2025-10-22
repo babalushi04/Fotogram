@@ -33,16 +33,16 @@ function minusSlides() {
 
 const images = [
     "./img/pics/kosovo.1.jpg",
-    "./img/pics/kosovo.2.jpg",
+    "./img/pics/kosovo.2.1.jpg",
     "./img/pics/kosovo.3.jpg",
     "./img/pics/kosovo.4.jpg",
     "./img/pics/kosovo.5.jpg",
-    "./img/pics/kosovo.6.jpg",
-    "./img/pics/albania.7.jpg",
+    "./img/pics/albania.6.jpg",
+    "./img/pics/albania.7.1.jpg",
     "./img/pics/albania.8.jpg",
     "./img/pics/albania.9.jpg",
     "./img/pics/albania.10.jpg",
-    "./img/pics/albania.11.jpg",
+    "./img/pics/albania.11.1.jpg",
     "./img/pics/albania.12.jpg"
 ];
 
