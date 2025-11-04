@@ -43,7 +43,7 @@ const images = [
     "./img/pics/albania.9.jpg",
     "./img/pics/albania.10.jpg",
     "./img/pics/albania.11.1.jpg",
-    "./img/pics/albania.12.jpg"
+    "./img/pics/albania12.jpg"
 ];
 
 let currentIndex = 0;
