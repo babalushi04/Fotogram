@@ -207,9 +207,62 @@ a:hover {
     display: none;
 }
 
-@media (max-width:450px) {
-    
-    #headerLogo{
-        height: 54px;
+@media (max-width: 800px) {
+    #imageDialog {
+        width: 95%;
+        height: auto;
+    }
+
+    #dialogImages {
+        width: 100%;
+        height: auto;
     }
 }
+@media (max-height: 700px) {
+    #imageDialog {
+        height: 90%;
+    }
+
+    #dialogImages {
+        height: 60vh;
+        width: auto;
+    }
+}
+@media (max-width: 500px) {
+    #mainPageImages {
+        width: 120px;
+        height: 120px;
+    }
+    .dialoImages {
+        width: 100%;
+        height: auto;
+    }
+    #headerInfo {
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-height: 400px) {
+    #mainPageImages {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 350px) {
+    #mainPageImages {
+        width: 80px;
+        height: 80px;
+    }
+    #headerInfo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
