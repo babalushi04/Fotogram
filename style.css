@@ -6,7 +6,8 @@ body {
     display: flex;
     flex-direction: column;
 }
-@font-face  {
+
+@font-face {
     font-family: Raleway;
     src: url("./fonts/raleway/Raleway-Italic-VariableFont_wght.ttf");
     font-family: Raleway;
@@ -225,6 +226,7 @@ a:hover {
         height: auto;
     }
 }
+
 @media (max-height: 700px) {
     #imageDialog {
         height: 90%;
@@ -235,19 +237,23 @@ a:hover {
         width: auto;
     }
 }
+
 @media (max-width: 500px) {
     #mainPageImages {
         width: 120px;
         height: 120px;
     }
+
     .dialoImages {
         width: 100%;
         height: auto;
     }
+
     #headerInfo {
         justify-content: center;
         align-items: center;
     }
+
     h1 {
         font-size: 30px;
     }
@@ -265,11 +271,10 @@ a:hover {
         width: 80px;
         height: 80px;
     }
+
     #headerInfo {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 }
-
-
