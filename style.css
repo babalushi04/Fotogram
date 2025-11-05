@@ -6,6 +6,13 @@ body {
     display: flex;
     flex-direction: column;
 }
+@font-face {
+    font-family: Raleway;
+    src: url("./Fonts-Raleway/Raleway-Italic-VariableFont_wght.ttf");
+    font-family: Raleway;
+    font-weight: bold;
+    src: url("./Fonts-Raleway/Raleway-VariableFont_wght.ttf");
+}
 
 p {
     margin: 0;
