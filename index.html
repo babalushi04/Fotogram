@@ -1,11 +1,11 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotogram</title>
-    
+
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./img/favicon/favicon.png" type="image/x-icon">
 
@@ -39,10 +39,11 @@
             <img onclick="openDialog(11)" id="mainPageImages" src="./img/pics/albania12.jpg" alt="pic12">
         </div>
 
-        <dialog id="imageDialog">
-            <header id="dialogHeader">
-                <h2>Kosovo & Albania</h2>
-                <button onclick="closeDialog()" id="dialogCloseButton" class="close-button" aria-label="Close">&times;</button>
+        <dialog aria-haspopup="dialog" aria-controls="dialogHeader" id="imageDialog">
+            <header id="dialogHeader" aria-labelledby="dialogTitle">
+                <h2 id="dialogTitle">Kosovo & Albania</h2>
+                <button onclick="closeDialog()" id="dialogCloseButton" class="close-button"
+                    aria-label="Close">&times;</button>
             </header>
 
             <section>
