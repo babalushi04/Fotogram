@@ -74,10 +74,11 @@ main {
 }
 
 #mainPageImages {
-    width: 160px;
-    height: 160px;
+    width: 256px;
+    height: 190px;
     border-radius: 12px;
     border: 2px solid rgb(231, 136, 27);
+    margin-top: 16px;
 }
 
 #mainPageImages:hover {
@@ -238,13 +239,20 @@ a:hover {
     }
 }
 
+@media (max-width: 700px) {
+    .imageContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media (max-width: 500px) {
     #mainPageImages {
-        width: 120px;
-        height: 120px;
+        width: 243px;
+        height: 162px;
     }
 
-    .dialoImages {
+    .dialogImages {
         width: 100%;
         height: auto;
     }
@@ -268,13 +276,20 @@ a:hover {
 
 @media (max-width: 350px) {
     #mainPageImages {
-        width: 80px;
-        height: 80px;
+        width: 200px;
+        height: 170px;
     }
 
     #headerInfo {
         display: flex;
         justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .imageContainer {
+        flex-direction: column;
         align-items: center;
     }
 }
