@@ -54,7 +54,7 @@ h3 {
     justify-content: center;
     z-index: 1;
     height: 80px;
-    background-color: rgb(26, 2, 2);
+    background-color: rgb(5, 4, 4);
     box-shadow: 0 5px 6px var(--shadow-color);
 }
 
@@ -107,7 +107,7 @@ main {
     gap: 16px;
     height: 80px;
     width: 100%;
-    background-color: rgb(26, 2, 2);
+    background-color: rgb(5, 4, 4);
     box-shadow: 0 -5px 6px var(--shadow-color);
 }
 
