@@ -1,63 +1,89 @@
-const dialogRef = document.getElementById("imageDialog");
+
+let dialogRef = document.getElementById("imageDialog");
+let current = 1;
+let max = 12;
+let currentIndex = 0;
+
+const IMAGES = [
+  "./img/pics/kosovo.1.jpg",
+  "./img/pics/kosovo.2.1.jpg",
+  "./img/pics/kosovo.3.jpg",
+  "./img/pics/kosovo.4.jpg",
+  "./img/pics/kosovo.5.jpg",
+  "./img/pics/albania.6.jpg",
+  "./img/pics/albania.7.1.jpg",
+  "./img/pics/albania.8.jpg",
+  "./img/pics/albania.9.jpg",
+  "./img/pics/albania.10.jpg",
+  "./img/pics/albania.11.1.jpg",
+  "./img/pics/albania12.jpg"
+];
 
 function openDialog(index) {
-    currentIndex = index;
-    current = index + 1;
-    updateImage();
-    updateCounter();
-    dialogRef.showModal();
+  currentIndex = index;
+  current = index + 1;
+  updateImage();
+  updateCounter();
+  dialogRef.showModal();
 }
 
 function closeDialog() {
-    dialogRef.close();
-    currentIndex = 0;
-    current = 1;
+  dialogRef.close();
+  currentIndex = 0;
+  current = 1;
 }
 
-let current = 1;
-const max = 12;
+function closeOnOutsideClick(event) {
+  const DIALOG = document.getElementById("imageDialog");
+  const RECT = DIALOG.getBoundingClientRect();
+
+  const CLICKED_INSIDE =
+    event.clientX >= RECT.left &&
+    event.clientX <= RECT.right &&
+    event.clientY >= RECT.top &&
+    event.clientY <= RECT.bottom;
+
+  if (!CLICKED_INSIDE) {
+    DIALOG.close();
+  }
+}
 
 function updateCounter() {
-    document.getElementById('imageCounter').innerText = `${current}/${max}`;
+  document.getElementById('imageCounter').innerText = `${current}/${max}`;
+}
+
+function updateImage() {
+  document.getElementById('dialogImages').src = IMAGES [currentIndex];
 }
 
 function plusSlides() {
-    current = (current % max) + 1;
-    updateCounter();
+  current = (current % max) + 1;
+  updateCounter();
+  currentIndex = (currentIndex + 1) % IMAGES.length;
+  updateImage();
 }
 
 function minusSlides() {
-    current = (current - 2 + max) % max + 1;
-    updateCounter();
+  current = (current - 2 + max) % max + 1;
+  updateCounter();
+  currentIndex = (currentIndex - 1 + IMAGES.length) % IMAGES.length;
+  updateImage();
 }
 
-const images = [
-    "./img/pics/kosovo.1.jpg",
-    "./img/pics/kosovo.2.1.jpg",
-    "./img/pics/kosovo.3.jpg",
-    "./img/pics/kosovo.4.jpg",
-    "./img/pics/kosovo.5.jpg",
-    "./img/pics/albania.6.jpg",
-    "./img/pics/albania.7.1.jpg",
-    "./img/pics/albania.8.jpg",
-    "./img/pics/albania.9.jpg",
-    "./img/pics/albania.10.jpg",
-    "./img/pics/albania.11.1.jpg",
-    "./img/pics/albania12.jpg"
-];
+function handleKey(event) {
+  if (!dialogRef.open) return;
 
-let currentIndex = 0;
-
-function updateImage() {
-    document.getElementById('dialogImages').src = images[currentIndex];
+  if (event.key === 'ArrowRight') {
+    plusSlides();
+  } else if (event.key === 'ArrowLeft') {
+    minusSlides();
+  } else if (event.key === 'Escape') {
+    closeDialog();
+  }
 }
 
-function showNextImage() {
-    currentIndex = (currentIndex + 1) % images.length;
-    updateImage();
-}
-
-function showPreviousImage() {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    updateImage();
+function enterToOpen(event, index) {
+  if (event.key === 'Enter') {
+    openDialog(index);
+  }
 }

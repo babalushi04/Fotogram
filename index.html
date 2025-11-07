@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -13,54 +13,82 @@
 
 <body>
 
-    <header id="mainPageHeader">
-        <nav>
-            <div id="headerInfo">
-                <img id="headerLogo" src="./img/favicon/favicon.png" alt="logo">
-                <p>Fotogram</p>
-            </div>
-        </nav>
+    <header aria-label="Header of main page" class="MainPageHeader">
+        <div class="ContentWrapperHeader">
+            <img class="HeaderLogo" src="./img/logo_gram/Fotogram_Logo.svg" alt="Fotogram Logo and Headline">
+        </div>
     </header>
 
     <main>
-        <h1>Your personal photo album</h1>
-        <div class="imageContainer">
-            <img onclick="openDialog(0)" id="mainPageImages" src="./img/pics/kosovo.1.jpg" alt="pic1">
-            <img onclick="openDialog(1)" id="mainPageImages" src="./img/pics/kosovo.2.1.jpg" alt="pic2">
-            <img onclick="openDialog(2)" id="mainPageImages" src="./img/pics/kosovo.3.jpg" alt="pic3">
-            <img onclick="openDialog(3)" id="mainPageImages" src="./img/pics/kosovo.4.jpg" alt="pic4">
-            <img onclick="openDialog(4)" id="mainPageImages" src="./img/pics/kosovo.5.jpg" alt="pic5">
-            <img onclick="openDialog(5)" id="mainPageImages" src="./img/pics/albania.6.jpg" alt="pic6">
-            <img onclick="openDialog(6)" id="mainPageImages" src="./img/pics/albania.7.1.jpg" alt="pic7">
-            <img onclick="openDialog(7)" id="mainPageImages" src="./img/pics/albania.8.jpg" alt="pic8">
-            <img onclick="openDialog(8)" id="mainPageImages" src="./img/pics/albania.9.jpg" alt="pic9">
-            <img onclick="openDialog(9)" id="mainPageImages" src="./img/pics/albania.10.jpg" alt="pic10">
-            <img onclick="openDialog(10)" id="mainPageImages" src="./img/pics/albania.11.1.jpg" alt="pic11">
-            <img onclick="openDialog(11)" id="mainPageImages" src="./img/pics/albania12.jpg" alt="pic12">
-        </div>
-
-        <dialog aria-haspopup="dialog" aria-controls="dialogHeader" id="imageDialog">
-            <header id="dialogHeader" aria-labelledby="dialogTitle">
-                <h2 id="dialogTitle">Kosovo & Albania</h2>
-                <button onclick="closeDialog()" id="dialogCloseButton" class="close-button"
-                    aria-label="Close">&times;</button>
-            </header>
-            <section>
-                <img id="dialogImages" src="./img/pics/kosovo.1.jpg" alt="pic1">
+        <div class="ContentWrapperMain">
+            <section aria-labelledby="mainGalleryHeading">
+                <h1 id="mainGalleryHeading">Your personal photo album</h1>
+                <ul class="ImageContainer">
+                    <li><img tabindex="0" onkeypress="enterToOpen(event, 0)" onclick="openDialog(0)"
+                            class="mainPageImages" src="./img/pics/kosovo.1.jpg"
+                            alt="Guy smoking in small store on the street"></li>
+                    <li><img tabindex="0" onkeypress="enterToOpen(event, 1)" onclick="openDialog(1)"
+                            class="mainPageImages" src="./img/pics/kosovo.2.jpg"
+                            alt="Restaurant at the corner of a street"></li>
+                    <li><img tabindex="0" onkeypress="enterToOpen(event, 2)" onclick="openDialog(2)"
+                            class="mainPageImages" src="./img/pics/kosovo.3.jpg"
+                            alt="A traditional japanese house by night"></li>
+                    <li><img tabindex="0" onkeypress="enterToOpen(event, 3)" onclick="openDialog(3)"
+                            class="mainPageImages" src="./img/pics/kosovo.4.jpg"
+                            alt="small japanese street with lanterns at late evening"></li>
+                    <li><img tabindex="0" onkeypress="enterToOpen(event, 4)" onclick="openDialog(4)"
+                            class="mainPageImages" src="./img/pics/kosovo.5.jpg"
+                            alt="traditional japanese houses in kyouto by night"></li>
+                    <li><img tabindex="0" onkeypress="enterToOpen(event, 5)" onclick="openDialog(5)"
+                            class="mainPageImages" src="./img/pics/albania.6.jpg"
+                            alt="small side street on a rainy day"></li>
+                    <li><img tabindex="0" onkeypress="enterToOpen(event, 6)" onclick="openDialog(6)"
+                            class="mainPageImages" src="./img/pics/albania.7.1.jpg"
+                            alt="asakusa shrine crowded with people"></li>
+                    <li><img tabindex="0" onkeypress="enterToOpen(event, 7)" onclick="openDialog(7)"
+                            class="mainPageImages" src="./img/pics/albania.8.jpg"
+                            alt="shibuya crossing crowded with people"></li>
+                    <li><img tabindex="0" onkeypress="enterToOpen(event, 8)" onclick="openDialog(8)"
+                            class="mainPageImages" src="./img/pics/albania.9.jpg"
+                            alt="old town road downwards a hill"></li>
+                    <li><img tabindex="0" onkeypress="enterToOpen(event, 9)" onclick="openDialog(9)"
+                            class="mainPageImages" src="./img/pics/albania.10.jpg"
+                            alt="road to a temple in the night"></li>
+                    <li><img tabindex="0" onkeypress="enterToOpen(event, 10)" onclick="openDialog(10)"
+                            class="mainPageImages" src="./img/pics/albania.11.jpg"
+                            alt="people crossing the road near a station"></li>
+                    <li><img tabindex="0" onkeypress="enterToOpen(event, 11)" onclick="openDialog(11)"
+                            class="mainPageImages" src="./img/pics/albania12.jpg"
+                            alt="Osaka Caste in the early morning"></li>
+                </ul>
             </section>
 
-            <footer id="dialogFooter">
-                <a onclick="minusSlides(), showPreviousImage()" href="#" class="previous">&#8249;</a>
-                <div id="imageCounter" class="numbertext">1/12</div>
-                <a onclick="plusSlides(), showNextImage()" href="#" class="next">&#8250;</a>
-            </footer>
-        </dialog>
+            <dialog aria-label="dialog window" id="imageDialog" onclick="closeOnOutsideClick(event)"
+                onkeydown="handleKey(event)">
+                <header class="DialogHeader">
+                    <h2 style="margin: 0 auto; width: fit-content; background-color: black;">Closeup</h2>
+                    <button tabindex="0" onclick="closeDialog()" id="dialogCloseButton" class="CloseButton"
+                        aria-label="Close">X</button>
+                </header>
+
+                <section>
+                    <img id="dialogImages" src="./img/pics/kosovo.1.jpg" alt="Closeup images in dialog">
+                </section>
+
+                <footer id="dialogFooter">
+                    <button aria-label="previous button" tabindex="0" onclick="minusSlides(); event.stopPropagation();"
+                        href="#" class="Previous">&#8249;</button>
+                    <div id="imageCounter" class="Numbertext">1/12</div>
+                    <button aria-label="next button" tabindex="0" onclick="plusSlides(); event.stopPropagation();"
+                        href="#" class="Next">&#8250;</button>
+                </footer>
+            </dialog>
+        </div>
     </main>
 
-    <footer id="mainPageFooter">
-        <div id="footerBox">
-            <img id="footerLogo" src="./img/favicon/favicon.png" alt="logo2">
-        </div>
+    <footer class="MainPageFooter">
+        <img class="FooterLogo" src="./imgs/favicon/favicon.png" alt="Fotogram Logo">
+        <h2>Fotogram</h2>
     </footer>
 
 </body>

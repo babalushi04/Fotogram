@@ -1,136 +1,133 @@
+
 body {
-    margin: 0;
-    height: 100vh;
-    background-color: midnightblue;
-    color: white;
     display: flex;
     flex-direction: column;
-    font-family: raleway, sans-serif;
+    margin: 0 auto;
+    height: 100vh;
 }
 
-@font-face {
-    font-family: Raleway;
-    src: url("./fonts/raleway/Raleway-Italic-VariableFont_wght.ttf");
-    font-weight: bold;
-    src: url("./fonts/raleway/Raleway-VariableFont_wght.ttf");
-}
-
-p {
-    margin: 0;
-    font-size: 20px;
+:root {
+    --border-color: rgb(231, 136, 27); 
+    --shadow-color: rgba(231, 136, 27, 0.5);
+    --text-color: white;
 }
 
 h1 {
-    text-align: center;
     font-size: 48px;
-    margin-top: 48px;
-    margin-bottom: 0;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--text-color);
+    background-color: black;
+    width: fit-content;
+    text-align: center;
 }
 
 h2 {
+    color: var(--text-color);
+}
+
+h3 {
     margin: 0;
+    color: var(--text-color);
+}
+
+/* Contentwrapper */
+
+.ContentWrapperHeader {
+    width: 100%;
+    max-width: 1920px;
+}
+
+.ContentWrapperMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1920px;
 }
 
 /* Header */
 
-#mainPageHeader {
-    position: relative;
+.MainPageHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
     height: 80px;
     background-color: rgb(0, 0, 0);
-    box-shadow: 0 5px 6px rgba(231, 136, 27, 0.5);
+    box-shadow: 0 5px 6px var(--shadow-color);
 }
 
-#headerInfo {
+.HeaderLogo {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 8px;
-    height: 80px;
-    margin-left: 16px;
-}
-
-#headerLogo {
     height: 72px;
+    padding-left: 16px;
 }
 
 /* Main */
+
 main {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     flex: 1;
-    background-color: black;
+    background-image: url(./imgs/mainPics/rain_bg.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.imageContainer {
+.ImageContainer {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    flex: 1;
-    gap: 12px;
-    margin-bottom: 16px;
+    padding: 0;
 }
 
-#mainPageImages {
-    width: 256px;
-    height: 190px;
+.mainPageImages {
+    width: 160px;
+    height: 160px;
     border-radius: 12px;
-    border: 2px solid rgb(231, 136, 27);
-    margin-top: 16px;
+    border: 2px solid var(--border-color);
+    margin: 16px;
 }
 
-#mainPageImages:hover {
+.mainPageImages:hover {
+    border: 2px solid rgb(255, 255, 255);
     cursor: pointer;
 }
 
-#mainPageImages:hover {
-    border: 2px solid rgb(255, 255, 255);
-}
-
-#mainPageFooter {
-    height: 80px;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 8px;
-    bottom: 0;
-    box-shadow: 0 -5px 6px rgba(231, 136, 27, 0.5);
-}
-
 /* Footer */
-#footerBox {
+
+.MainPageFooter {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 16px;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 -5px 6px var(--shadow-color);
 }
 
-#footerLogo {
+.FooterLogo {
     height: 72px;
     margin-top: 8px;
 }
 
-#copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /* Dialog */
+
 #imageDialog {
-    border: 2px solid rgb(231, 136, 27);
+    justify-items: center;
+    border-radius: 12px;
+    width: 640px;
+    height: 720px;
+    padding: 0;
+    border: 2px solid var(--border-color);
     background-color: black;
     color: white;
-    border-radius: 12px;
-    width: 780px;
-    height: 726px;
-    justify-items: center;
-    padding: 0;
-    background-image: url(./img/pics/flower.1.jpg);
+    background-image: url(./imgs/mainPics/rain_bg.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -139,157 +136,160 @@ main {
     background-color: rgb(128, 128, 128, 0.275);
 }
 
-#dialogHeader {
-    height: 80px;
-    width: 100%;
+.DialogHeader {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 80px;
+    width: 100%;
+    margin-top: 12px;
 }
 
 #dialogImages {
-    width: 761px;
-    height: 471px;
-    margin-top: 2px;
-    border: 1px solid rgb(231, 136, 27);
+    width: 480px;
+    height: 480px;
+    margin-top: 24px;
+    border: 1px solid var(--border-color);
 }
 
 #dialogFooter {
-    height: 100px;
-    width: 100%;
-    position: absolute;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: absolute;
+    height: 100px;
+    width: 100%;
     bottom: 8px;
 }
 
-.close-button {
-    font-size: 60px;
+.CloseButton {
+    font-size: 32px;
     color: #ffffff;
     background: transparent;
     border: none;
     cursor: pointer;
     border-radius: 50%;
-    transition: background-color 0.2s, color 0.2s;
-    padding: 0;
-    outline: none;
-}
-
-.close-button:hover {
-    background-color: rgb(255, 163, 58, 0.5);
-}
-
-.close-button {
-    position: absolute;
-    top: 0;
-    right: 8px;
-}
-
-a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 16px;
-}
-
-a:hover {
-    background-color: rgba(255, 163, 58, 0.5);
-}
-
-.previous {
-    background-color: transparent;
-    color: white;
     margin-right: 8px;
-    border-radius: 50%;
-    background-color: rgb(231, 136, 27, 0.5);
 }
 
-.next {
-    background-color: transparent;
-    color: white;
-    margin-left: 8px;
+.CloseButton:hover {
+    background-color: var(--shadow-color);
+}
+
+.Previous {
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
-    background-color: rgb(231, 136, 27, 0.5);
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: var(--shadow-color);
+}
+
+.Previous:hover {
+    background-color: var(--border-color);
+}
+
+.Next {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: var(--shadow-color);
+}
+
+.Next:hover {
+    background-color: var(--border-color);
+
 }
 
 .d_none {
     display: none;
 }
 
-@media (max-width: 800px) {
-    #imageDialog {
-        width: 95%;
-        height: auto;
-    }
-
-    #dialogImages {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-height: 700px) {
-    #imageDialog {
-        height: 90%;
-    }
-
-    #dialogImages {
-        height: 60vh;
-        width: auto;
-    }
-}
-
 @media (max-width: 700px) {
-    .imageContainer {
-        flex-direction: column;
-        align-items: center;
+    #imageDialog {
+        width: 520px;
+        height: 600px;
+    }
+
+    #dialogImages {
+        width: 400px;
+        height: 400px;
+    }
+
+    .DialogHeader {
+        height: 60px;
+    }
+
+    .Close-button {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    #imageDialog {
+        width: 400px;
+        height: 480px;
+    }
+
+    #dialogImages {
+        width: 320px;
+        height: 320px;
+    }
+
+    .DialogHeader {
+        height: 40px;
+    }
+
+    .Close-button {
+        font-size: 24px;
+        top: 8px;
     }
 }
 
 @media (max-width: 500px) {
-    #mainPageImages {
-        width: 243px;
-        height: 162px;
+
+    .HeaderLogo{
+        height: 54px;
     }
 
-    .dialogImages {
-        width: 100%;
-        height: auto;
+    #imageDialog {
+        width: 280px;
+        height: 360px;
     }
 
-    #headerInfo {
-        justify-content: center;
-        align-items: center;
-    }
-
-    h1 {
-        font-size: 30px;
-    }
-}
-
-@media (max-height: 400px) {
-    #mainPageImages {
-        width: 100px;
-        height: 100px;
-    }
-}
-
-@media (max-width: 350px) {
-    #mainPageImages {
+    #dialogImages {
         width: 200px;
-        height: 170px;
+        height: 200px;
     }
 
-    #headerInfo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .DialogHeader {
+        height: 30px;
     }
+
+    .Close-button {
+        font-size: 16px;
+        top: 4px;
+    }
+
+    .Previous {
+        height: 32px;
+        width: 32px;
+    }
+
+    .Next {
+        height: 32px;
+        width: 32px;
+    }
+
 }
 
-@media (max-width: 320px) {
-    .imageContainer {
-        flex-direction: column;
-        align-items: center;
+@media (max-width:400px) {
+    
+    .HeaderLogo{
+        height: 40px;
     }
 }
