@@ -22,36 +22,37 @@
     <main>
         <div class="ContentWrapperMain">
             <section aria-labelledby="mainGalleryHeading">
-            <h1 id="mainGalleryHeading">Your personal photo album</h1>
-            <ul class="ImageContainer">
-                <img tabindex="0" onkeypress="enterToOpen(event, 0)" onclick="openDialog(0)" class="mainPageImages" src="./img/pics/kosovo.1.jpg"
-                    alt="Aussicht von der burg Kalaja">
-                <img tabindex="0" onkeypress="enterToOpen(event, 1)" onclick="openDialog(1)" class="mainPageImages" src="./img/pics/kosovo.2.1.jpg"
-                    alt="Schöne Architektur von einem gebäude in Prishtina">
-                <img tabindex="0" onkeypress="enterToOpen(event, 2)" onclick="openDialog(2)" class="mainPageImages" src="./img/pics/kosovo.3.jpg"
-                    alt="Kosovarische Flagge">
-                <img tabindex="0" onkeypress="enterToOpen(event, 3)" onclick="openDialog(3)" class="mainPageImages" src="./img/pics/kosovo.4.jpg"
-                    alt="Aussicht von eine kleinen Dorf">
-                <img tabindex="0" onkeypress="enterToOpen(event, 4)" onclick="openDialog(4)" class="mainPageImages" src="./img/pics/kosovo.5.jpg"
-                    alt="Stadt Prizren">
-                <img tabindex="0" onkeypress="enterToOpen(event, 5)" onclick="openDialog(5)" class="mainPageImages" src="./img/pics/albania.6.jpg"
-                    alt="Eine Brücke in Albanien">
-                <img tabindex="0" onkeypress="enterToOpen(event, 6)" onclick="openDialog(6)" class="mainPageImages" src="./img/pics/albania.7.1.jpg"
-                    alt="Albanische Strand">
-                <img tabindex="0" onkeypress="enterToOpen(event, 7)" onclick="openDialog(7)" class="mainPageImages" src="./img/pics/albania.8.jpg"
-                    alt="Aussicht von eine Burg in Albanien">
-                <img tabindex="0" onkeypress="enterToOpen(event, 8)" onclick="openDialog(8)" class="mainPageImages" src="./img/pics/albania.9.jpg"
-                    alt="Albanische Hütten">
-                <img tabindex="0" onkeypress="enterToOpen(event, 9)" onclick="openDialog(9)" class="mainPageImages" src="./img/pics/albania.10.jpg"
-                    alt="Landstrasse 'Rruga e Kombit'">
-                <img tabindex="0" onkeypress="enterToOpen(event, 10)" onclick="openDialog(10)" class="mainPageImages" src="./img/pics/albania.11.1.jpg"
-                    alt="Albanische Flagge">
-                <img tabindex="0" onkeypress="enterToOpen(event, 11)" onclick="openDialog(11)" class="mainPageImages" src="./img/pics/albania12.jpg"
-                    alt="Albanische Meer">
-            </ul>
+                <h1 id="mainGalleryHeading">Your personal photo album</h1>
+                <ul class="ImageContainer">
+                    <img tabindex="0" onkeypress="enterToOpen(event, 0)" onclick="openDialog(0)" class="mainPageImages"
+                        src="./img/pics/kosovo.1.jpg" alt="Aussicht von der burg Kalaja">
+                    <img tabindex="0" onkeypress="enterToOpen(event, 1)" onclick="openDialog(1)" class="mainPageImages"
+                        src="./img/pics/kosovo.2.1.jpg" alt="Schöne Architektur von einem gebäude in Prishtina">
+                    <img tabindex="0" onkeypress="enterToOpen(event, 2)" onclick="openDialog(2)" class="mainPageImages"
+                        src="./img/pics/kosovo.3.jpg" alt="Kosovarische Flagge">
+                    <img tabindex="0" onkeypress="enterToOpen(event, 3)" onclick="openDialog(3)" class="mainPageImages"
+                        src="./img/pics/kosovo.4.jpg" alt="Aussicht von eine kleinen Dorf">
+                    <img tabindex="0" onkeypress="enterToOpen(event, 4)" onclick="openDialog(4)" class="mainPageImages"
+                        src="./img/pics/kosovo.5.jpg" alt="Stadt Prizren">
+                    <img tabindex="0" onkeypress="enterToOpen(event, 5)" onclick="openDialog(5)" class="mainPageImages"
+                        src="./img/pics/albania.6.jpg" alt="Eine Brücke in Albanien">
+                    <img tabindex="0" onkeypress="enterToOpen(event, 6)" onclick="openDialog(6)" class="mainPageImages"
+                        src="./img/pics/albania.7.1.jpg" alt="Albanische Strand">
+                    <img tabindex="0" onkeypress="enterToOpen(event, 7)" onclick="openDialog(7)" class="mainPageImages"
+                        src="./img/pics/albania.8.jpg" alt="Aussicht von eine Burg in Albanien">
+                    <img tabindex="0" onkeypress="enterToOpen(event, 8)" onclick="openDialog(8)" class="mainPageImages"
+                        src="./img/pics/albania.9.jpg" alt="Albanische Hütten">
+                    <img tabindex="0" onkeypress="enterToOpen(event, 9)" onclick="openDialog(9)" class="mainPageImages"
+                        src="./img/pics/albania.10.jpg" alt="Landstrasse 'Rruga e Kombit'">
+                    <img tabindex="0" onkeypress="enterToOpen(event, 10)" onclick="openDialog(10)"
+                        class="mainPageImages" src="./img/pics/albania.11.1.jpg" alt="Albanische Flagge">
+                    <img tabindex="0" onkeypress="enterToOpen(event, 11)" onclick="openDialog(11)"
+                        class="mainPageImages" src="./img/pics/albania12.jpg" alt="Albanische Meer">
+                </ul>
             </section>
 
-            <dialog aria-label="dialog window" id="imageDialog" onclick="closeOnOutsideClick(event)" onkeydown="handleKey(event)">
+            <dialog aria-label="dialog window" id="imageDialog" onclick="closeOnOutsideClick(event)"
+                onkeydown="handleKey(event)">
                 <header class="DialogHeader">
                     <h2 style="margin: 0 auto; width: fit-content; background-color: black;">Kosovo&Albanien</h2>
                     <button tabindex="0" onclick="closeDialog()" id="dialogCloseButton" class="CloseButton"
@@ -63,9 +64,11 @@
                 </section>
 
                 <footer id="dialogFooter">
-                    <button aria-label="previous button" tabindex="0" onclick="minusSlides(); event.stopPropagation();" href="#" class="Previous">&#8249;</button>
+                    <button aria-label="previous button" tabindex="0" onclick="minusSlides(); event.stopPropagation();"
+                        href="#" class="Previous">&#8249;</button>
                     <div id="imageCounter" class="Numbertext">1/12</div>
-                    <button aria-label="next button" tabindex="0" onclick="plusSlides(); event.stopPropagation();" href="#" class="Next">&#8250;</button>
+                    <button aria-label="next button" tabindex="0" onclick="plusSlides(); event.stopPropagation();"
+                        href="#" class="Next">&#8250;</button>
                 </footer>
             </dialog>
         </div>

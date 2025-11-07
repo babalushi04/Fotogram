@@ -6,7 +6,7 @@ body {
 }
 
 :root {
-    --border-color: rgb(231, 136, 27); 
+    --border-color: rgb(231, 136, 27);
     --shadow-color: rgba(231, 136, 27, 0.5);
     --text-color: white;
 }
@@ -251,7 +251,7 @@ main {
 
 @media (max-width: 500px) {
 
-    .HeaderLogo{
+    .HeaderLogo {
         height: 54px;
     }
 
@@ -283,15 +283,16 @@ main {
         height: 32px;
         width: 32px;
     }
-    .FooterLogo{
+
+    .FooterLogo {
         height: 50px;
     }
 
 }
 
 @media (max-width:400px) {
-    
-    .HeaderLogo{
+
+    .HeaderLogo {
         height: 50px;
     }
-    }
+}
