@@ -250,6 +250,13 @@ main {
 }
 
 @media (max-width: 500px) {
+    .ContentWrapperHeader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
 
     .HeaderLogo {
         height: 54px;
