@@ -66,7 +66,6 @@ Fotogram/
 - **Keyboard-Support** – Alle Funktionen sind per Tastatur bedienbar:
   - `Tab` / `Shift+Tab` – Navigation durch Thumbnails
   - `Enter` – Bild in Lightbox öffnen
-  - `←` / `→` – Vorheriges/Nächstes Bild
   - `Esc` – Lightbox schließen
 - **Fokus-Management** – Sichtbare Fokus-Indikatoren
 
@@ -84,24 +83,22 @@ Fotogram/
 ## 📸 Bildquellen
 
 Die Fotos stammen aus Kosovo und Albanien und zeigen:
-- Städte: Prishtina, Prizren
+- Städte: Prishtina, Prizren.
 - Landschaften: Berge, Strände, Burgen
 - Kultur: Flaggen, Architektur
 
-*(Ersetze dies mit deinen tatsächlichen Quellen, falls die Bilder von dir sind oder eine Lizenz haben)*
-
 ## 📄 Lizenz
 
-Dieses Projekt wurde für Bildungszwecke erstellt und steht unter der **MIT-Lizenz**.
+Dieses Projekt wurde für Bildungszwecke erstellt und steht unter der **Developer Akademie**.
 
 Die Schriftart Raleway unterliegt der **SIL Open Font License**.
 
 ## 👨‍💻 Autor
 
-**babalushi04**  
-Frontend Developer in Ausbildung  
+**Virxhin Bytyqi**  
+Frontend Developer in Ausbildung,
 GitHub: [babalushi04](https://github.com/babalushi04)
 
 ---
 
-**Entwickelt im Rahmen der Frontend Developer Akademie – November 2025**
+**Entwickelt im Rahmen der Developer Akademie – November 2025**
