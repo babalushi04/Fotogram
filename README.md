@@ -10,7 +10,6 @@ Fotogram ist das 4. Projekt meiner Weiterbildung zum Frontend Developer. Die Anw
 
 - **Responsive Bildergalerie** – Grid-Layout, das sich an verschiedene Bildschirmgrößen anpasst
 - **Lightbox/Modal-Dialog** – Vollbildansicht mit nativen `<dialog>`-Element
-- **Tastaturnavigation** – Pfeiltasten zum Navigieren, Escape zum Schließen, Enter zum Öffnen
 - **Barrierefreiheit** – ARIA-Labels, semantisches HTML, Fokus-Management
 - **Bilderzähler** – Aktuelle Position wird angezeigt (z.B. "3/12")
 - **Click-Outside-to-Close** – Dialog schließt beim Klick außerhalb des Bildes
