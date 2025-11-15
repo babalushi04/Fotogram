@@ -74,7 +74,7 @@ Die Schriftart Raleway unterliegt der **SIL Open Font License**.
 ## 👨‍💻 Autor
 
 **Virxhin Bytyqi**  
-Frontend Developer in Ausbildung,
+Junior Webentwickler in Weiterbildung an der Developer Akademie - Frontend und Backend(Full Stack)
 GitHub: [babalushi04](https://github.com/babalushi04)
 
 ---
