@@ -22,27 +22,6 @@ Fotogram ist das 4. Projekt meiner Weiterbildung zum Frontend Developer. Die Anw
 - **Vanilla JavaScript** – Keine Frameworks, nur natives DOM-API
 - **Raleway Font** – Lokal eingebundene Schriftart
 
-## 🚀 Installation & Start
-
-1. Repository klonen oder herunterladen:
-   ```bash
-   git clone https://github.com/babalushi04/Fotogram.git
-   ```
-
-2. In den Projektordner wechseln:
-   ```bash
-   cd Fotogram
-   ```
-
-3. `index.html` im Browser öffnen:
-   - Doppelklick auf die Datei **oder**
-   - Per Terminal (PowerShell):
-     ```powershell
-     start index.html
-     ```
-
-**Keine Installation nötig** – einfach die HTML-Datei öffnen und loslegen!
-
 ## 📂 Projektstruktur
 
 ```
