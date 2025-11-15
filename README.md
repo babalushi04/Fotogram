@@ -1,2 +1,107 @@
-<h1>Projekt Fotogram</h1>
-<p>4's Projekt der Weiterbildung in den Bereichen HTML, CSS und JavaScript.</p>
+# Fotogram
+
+Eine moderne, barrierefreie Fotogalerie, die Bilder aus Kosovo und Albanien in einem responsiven Layout mit Lightbox-Funktion präsentiert.
+
+## 📋 Projektbeschreibung
+
+Fotogram ist das 4. Projekt meiner Weiterbildung zum Frontend Developer. Die Anwendung zeigt eine Bildergalerie mit 12 hochwertigen Fotos und bietet eine intuitive Lightbox-Navigation mit voller Tastaturunterstützung.
+
+## ✨ Features
+
+- **Responsive Bildergalerie** – Grid-Layout, das sich an verschiedene Bildschirmgrößen anpasst
+- **Lightbox/Modal-Dialog** – Vollbildansicht mit nativen `<dialog>`-Element
+- **Tastaturnavigation** – Pfeiltasten zum Navigieren, Escape zum Schließen, Enter zum Öffnen
+- **Barrierefreiheit** – ARIA-Labels, semantisches HTML, Fokus-Management
+- **Bilderzähler** – Aktuelle Position wird angezeigt (z.B. "3/12")
+- **Click-Outside-to-Close** – Dialog schließt beim Klick außerhalb des Bildes
+
+## 🛠️ Tech Stack
+
+- **HTML5** – Semantische Struktur mit `<dialog>`, `<header>`, `<footer>`, `<section>`
+- **CSS3** – Custom Properties, Flexbox/Grid, responsive Design
+- **Vanilla JavaScript** – Keine Frameworks, nur natives DOM-API
+- **Raleway Font** – Lokal eingebundene Schriftart
+
+## 🚀 Installation & Start
+
+1. Repository klonen oder herunterladen:
+   ```bash
+   git clone https://github.com/babalushi04/Fotogram.git
+   ```
+
+2. In den Projektordner wechseln:
+   ```bash
+   cd Fotogram
+   ```
+
+3. `index.html` im Browser öffnen:
+   - Doppelklick auf die Datei **oder**
+   - Per Terminal (PowerShell):
+     ```powershell
+     start index.html
+     ```
+
+**Keine Installation nötig** – einfach die HTML-Datei öffnen und loslegen!
+
+## 📂 Projektstruktur
+
+```
+Fotogram/
+├── index.html          # Hauptseite mit Galerie
+├── style.css           # Styling und Layout
+├── script.js           # Dialog-Logik und Navigation
+├── README.md           # Diese Datei
+├── fonts/
+│   └── raleway/        # Raleway-Schriftart (lokal)
+└── img/
+    ├── pics/           # Galeriebilder (Kosovo & Albanien)
+    ├── logo_gram/      # Fotogram-Logo (SVG)
+    └── favicon/        # Browser-Icon
+```
+
+## ♿ Barrierefreiheit
+
+- **Alt-Texte** – Jedes Bild hat eine beschreibende Alternative
+- **ARIA-Labels** – Buttons und Bereiche sind für Screenreader benannt
+- **Keyboard-Support** – Alle Funktionen sind per Tastatur bedienbar:
+  - `Tab` / `Shift+Tab` – Navigation durch Thumbnails
+  - `Enter` – Bild in Lightbox öffnen
+  - `←` / `→` – Vorheriges/Nächstes Bild
+  - `Esc` – Lightbox schließen
+- **Fokus-Management** – Sichtbare Fokus-Indikatoren
+
+## 🎨 Funktionsweise
+
+### Bildergalerie
+- 12 Thumbnails im Grid-Layout
+- Click oder Enter öffnet das Bild im Modal
+
+### Lightbox-Navigation
+- **Pfeiltasten** oder **Buttons** zum Durchblättern
+- **Bilderzähler** zeigt Position (z.B. "5/12")
+- **Backdrop-Click** oder **X-Button** schließt den Dialog
+
+## 📸 Bildquellen
+
+Die Fotos stammen aus Kosovo und Albanien und zeigen:
+- Städte: Prishtina, Prizren
+- Landschaften: Berge, Strände, Burgen
+- Kultur: Flaggen, Architektur
+
+*(Ersetze dies mit deinen tatsächlichen Quellen, falls die Bilder von dir sind oder eine Lizenz haben)*
+
+## 📄 Lizenz
+
+Dieses Projekt wurde für Bildungszwecke erstellt und steht unter der **MIT-Lizenz**.
+
+Die Schriftart Raleway unterliegt der **SIL Open Font License**.
+
+## 👨‍💻 Autor
+
+**babalushi04**  
+Frontend Developer in Ausbildung  
+GitHub: [babalushi04](https://github.com/babalushi04)
+
+---
+
+**Entwickelt im Rahmen der Frontend Developer Akademie – November 2025**
