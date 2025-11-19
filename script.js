@@ -1,6 +1,7 @@
 let dialogRef = document.getElementById("imageDialog");
 let currentIndex = 0;
 
+
 const IMAGES = [
   "./img/pics/kosovo.1.jpg",
   "./img/pics/kosovo.2.1.jpg",
@@ -18,7 +19,6 @@ const IMAGES = [
 
 function openDialog(index) {
   currentIndex = index;
-  current = index + 1;
   updateImage();
   updateCounter();
   dialogRef.showModal();
@@ -27,7 +27,7 @@ function openDialog(index) {
 function closeDialog() {
   dialogRef.close();
   currentIndex = 0;
-  current = 1;
+  updateCounter();
 }
 
 function closeOnOutsideClick(event) {
@@ -54,17 +54,15 @@ function updateImage() {
 }
 
 function plusSlides() {
-  current = (current % IMAGES.length) + 1;
-  updateCounter();
   currentIndex = (currentIndex + 1) % IMAGES.length;
   updateImage();
+  updateCounter();
 }
 
 function minusSlides() {
-  current = (current - 2 + IMAGES.length) % IMAGES.length + 1;
-  updateCounter();
   currentIndex = (currentIndex - 1 + IMAGES.length) % IMAGES.length;
   updateImage();
+  updateCounter();
 }
 
 function handleKey(event) {
