@@ -53,7 +53,7 @@ function closeOnOutsideClick(event) {
 }
 
 function updateCounter() {
-  document.getElementById('imageCounter').innerText = `${current}/${IMAGES.length}`;
+  document.getElementById('imageCounter').innerText = `${currentIndex + 1}/${IMAGES.length}`;
 }
 
 function updateImage() {
