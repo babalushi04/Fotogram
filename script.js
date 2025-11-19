@@ -1,4 +1,4 @@
-let dialogRef = document.getElementById("imageDialog");
+const dialogRef = document.getElementById("imageDialog");
 let currentIndex = 0;
 
 
