@@ -1,6 +1,4 @@
 let dialogRef = document.getElementById("imageDialog");
-let current = 1;
-let max = 12;
 let currentIndex = 0;
 
 const IMAGES = [
@@ -20,8 +18,7 @@ const IMAGES = [
 
 function newFunction() {
   let dialogRef = document.getElementById("imageDialog");
-  let current = 1;
-  let max = IMAGES;
+  const MAX = IMAGES.length;
   let currentIndex = 0;
   return { currentIndex, current, dialogRef };
 }
