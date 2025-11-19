@@ -1,4 +1,3 @@
-
 let dialogRef = document.getElementById("imageDialog");
 let current = 1;
 let max = 12;
@@ -18,6 +17,14 @@ const IMAGES = [
   "./img/pics/albania.11.1.jpg",
   "./img/pics/albania12.jpg"
 ];
+
+function newFunction() {
+  let dialogRef = document.getElementById("imageDialog");
+  let current = 1;
+  let max = IMAGES;
+  let currentIndex = 0;
+  return { currentIndex, current, dialogRef };
+}
 
 function openDialog(index) {
   currentIndex = index;
@@ -49,7 +56,7 @@ function closeOnOutsideClick(event) {
 }
 
 function updateCounter() {
-  document.getElementById('imageCounter').innerText = `${current}/${max}`;
+  document.getElementById('imageCounter').innerText = `${current}/${IMAGES.length}`;
 }
 
 function updateImage() {
@@ -57,14 +64,14 @@ function updateImage() {
 }
 
 function plusSlides() {
-  current = (current % max) + 1;
+  current = (current % IMAGES.length) + 1;
   updateCounter();
   currentIndex = (currentIndex + 1) % IMAGES.length;
   updateImage();
 }
 
 function minusSlides() {
-  current = (current - 2 + max) % max + 1;
+  current = (current - 2 + IMAGES.length) % IMAGES.length + 1;
   updateCounter();
   currentIndex = (currentIndex - 1 + IMAGES.length) % IMAGES.length;
   updateImage();
