@@ -16,13 +16,6 @@ const IMAGES = [
   "./img/pics/albania12.jpg"
 ];
 
-function newFunction() {
-  let dialogRef = document.getElementById("imageDialog");
-  const MAX = IMAGES.length;
-  let currentIndex = 0;
-  return { currentIndex, current, dialogRef };
-}
-
 function openDialog(index) {
   currentIndex = index;
   current = index + 1;
