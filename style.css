@@ -269,8 +269,8 @@ main {
     }
 
     #dialogImages {
-        width: 252px;
-        height: 250px;
+         width: 265px;
+        height: 260px;
         object-fit: cover;
     }
 
