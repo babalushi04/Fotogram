@@ -7,7 +7,7 @@ const IMAGES = [
   "./img/pics/kosovo.2.1.jpg",
   "./img/pics/kosovo.3.jpg",
   "./img/pics/kosovo.4.jpg",
-  "./img/pics/kosovo.5.jpg",
+  "./img/pics/kosovo.5.jpg",  
   "./img/pics/albania.6.jpg",
   "./img/pics/albania.7.1.jpg",
   "./img/pics/albania.8.jpg",
